@@ -22,7 +22,7 @@ pipeline{
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker.build registry + ":Ubuntu1"
+          dockerImage = docker.build registry + ": $BUILD_NUMBER"
         }
       }
     }
