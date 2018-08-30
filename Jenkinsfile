@@ -10,7 +10,7 @@ pipeline{
   
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/ctproject4/Demo_project'
+        git 'http://10.30.5.71/soumyas2/Microservice_POC.git'
         //properties([pipelineTriggers([pollSCM('H/10 * * * *')])])
       }
     }
