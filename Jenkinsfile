@@ -16,7 +16,7 @@ pipeline{
     }
     stage('Building Project'){
         steps {
-            sh 'mvn clean install'
+            sh 'cd /var/lib/jenkins/workspace/Microservices/DemoCI/Patient-appt-consumer && mvn clean install'
         }
     }
     stage('Building image') {
